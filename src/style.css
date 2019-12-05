@@ -1,0 +1,51 @@
+.heading {
+    color: red;
+  }
+  .p-bgimage{
+    background: url('./mainbg.jpg');
+  }
+  .p-wrapper {
+    display: block;
+    position: relative;
+    height: 100%;
+    font-family: proxima-nova,Helvetica Neue,sans-serif;
+    background: #fff;
+    min-height: 480px;
+}
+.p-wrapper .p-leftwrapper{
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    width: 61%;
+    
+}
+
+.p-wrapper .p-rightwrapper{
+    position: static;
+    background: #fff;
+    color: #333;
+    width: 39%;
+    margin-left: auto;
+    
+}
+.p-imgwrap{
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .p-wrapper .p-leftwrapper{
+      position: relative;
+      width: 100%;
+      }
+}
+
