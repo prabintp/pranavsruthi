@@ -1,4 +1,5 @@
 import './style.scss';
+import './assets/10.jpeg';
 //import './desktop-style.css';
 
 /*import _ from 'lodash';
@@ -18,6 +19,7 @@ import './style.scss';
 
   $(document).ready(function() {
     autoPlayYouTubeModal();
+    $('.p-wrapper').removeClass('hide');
   });
   
   function autoPlayYouTubeModal() {

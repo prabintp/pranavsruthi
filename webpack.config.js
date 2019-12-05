@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+//const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+
 
 module.exports = {
     mode: 'development',
@@ -11,9 +13,11 @@ module.exports = {
         contentBase: './docs',
     },
     plugins: [
+     //new FaviconsWebpackPlugin('./src/assets/psLogo.png'), // svg works too!
      new CleanWebpackPlugin(),
      new HtmlWebpackPlugin({
       title: 'pranav sruthi',
+      favicon: "./src/favicon.ico",
       template: "./src/index.html",
       filename: "./index.html"
      }),
@@ -33,7 +37,7 @@ module.exports = {
              ],
      },
      {
-             test: /\.(png|svg|jpg|jpeg|gif)$/,
+             test: /\.(png|svg|jpg|jpeg|gif|ico)$/,
              use: [
            'file-loader',
              ],
