@@ -8,7 +8,7 @@ module.exports = {
         app: './src/index.js'
     },
     devServer: {
-        contentBase: './dist',
+        contentBase: './docs',
     },
     plugins: [
      new CleanWebpackPlugin(),
@@ -20,7 +20,7 @@ module.exports = {
    ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
   },
   module: {
        rules: [
@@ -33,7 +33,7 @@ module.exports = {
              ],
      },
      {
-             test: /\.(png|svg|jpg|gif)$/,
+             test: /\.(png|svg|jpg|jpeg|gif)$/,
              use: [
            'file-loader',
              ],
