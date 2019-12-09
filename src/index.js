@@ -3,6 +3,7 @@ import './style.scss';
 import gImg1 from './assets/10.jpeg';
 import gImg2 from './assets/09.jpeg';
 import gImg3 from './assets/01.jpeg';
+import gImg4 from './assets/12.jpg';
 //import './desktop-style.css';
 
 /*import _ from 'lodash';
@@ -31,9 +32,11 @@ import gImg3 from './assets/01.jpeg';
     var g1 = document.getElementById('gallery1');
     var g2 = document.getElementById('gallery2');
     var g3 = document.getElementById('gallery3');
+    var g4 = document.getElementById('gallery4');
     g1.src = gImg1;
     g2.src = gImg2;
     g3.src = gImg3;
+    g4.src = gImg4;
   }
   
   function autoPlayYouTubeModal() {

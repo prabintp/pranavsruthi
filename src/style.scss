@@ -208,7 +208,12 @@ body{
           background-position: center bottom;
           background-repeat: no-repeat;
           padding: 20px 5% 5%;
-          padding-bottom: 160px;;
+          padding-bottom: 160px;
+          h1{
+            font-family: Pompiere;
+    font-weight: 800;
+    font-size: 32px;
+          }
         }
         .p-welcome {
             justify-content: center;
