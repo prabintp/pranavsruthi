@@ -92,6 +92,7 @@ import gImg4 from './assets/12.jpg';
     var trigger = $('.trigger');
     trigger.click(function(e) {
       e.preventDefault();
+      gtag('event', 'click', {'event_category': 'video', 'event_label': 'save the date'});
       var theModal = $(this).data("target");
       var videoSRC = $(this).attr("src");
       var videoSRCauto = videoSRC + "?autoplay=1";
